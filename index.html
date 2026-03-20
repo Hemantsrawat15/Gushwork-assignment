@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
 
-  <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Devanagari:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="header">
-    <h1>My Website</h1>
-  </header>
+    <header class="header" id="site-header">
+        <div id="header-inner">
+            <img id="logo" src="assets/Logo.svg" alt="logo">
 
-  <main class="container">
-    <p id="text">Hello, this is a simple website 👋</p>
-    <button id="btn">Click Me</button>
-  </main>
+            <div id="header-menu">
+                <div id="nav-primary">
+                    <button id="about-us">About Us</button>
+                    <button id="products">Products <img src="assets/CaretRight.svg" alt=""></button>
+                </div>
+                <div id="nav-secondary">
+                    <button id="contact-us">Contact Us</button>
+                </div>
+            </div>
 
-  <footer class="footer">
-    <p>© 2026 My Website</p>
-  </footer>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <main class="container">
+        <div id="product-detail-hero">
+            <div id="breadcrumb-wrapper">
+                <div id="breadcrumb-trail">
+                    <p id="breadcrumb-parent">Products</p> <img src="assets/CaretRight.svg" alt="">
+                    <p> Two For One Twister </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

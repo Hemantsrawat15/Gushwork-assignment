@@ -1,10 +1,130 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+}
+
+header {
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-inner {
+    width: 1240px;
+    height: 45px;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-menu {
+    width: 357px;
+    height: 44px;
+    display: flex;
+    /* background-color: red; */
+    gap: 24px;
+}
+
+#nav-primary {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    font-weight: 500;
+}
+
+#about-us {
+    width: 94px;
+    height: 44px;
+    border: none;
+    opacity: 1;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.6%;
+    background-color: white;
+}
+
+#products {
+    width: 112px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 8px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.6%;
+    background-color: white;
+}
+
+#contact-us {
+    width: 107px;
+    height: 44px;
+    border-radius: 10px;
+    gap: 4px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    border: none;
+    background: #2B3990;
+    color: white;
+}
+
+#product-detail-hero {
+    height: 1117px;
+    background: white;
+}
+
+#breadcrumb-wrapper{
+}
+
+#breadcrumb-trail {
+    width: 222px;
+    height: 20px;
+    opacity: 1;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.6%;
+    display: flex;              
+    align-items: center;      
+    white-space: nowrap;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    margin-right: 180px;
+    margin-left: 180px;
+}
+
+#breadcrumb-trail img {
+    transform: rotate(-90deg);
+    height: 16px;
+    width: 16px;
+}
+
+#breadcrumb-parent{
+    color: #4D545C;
 }
