@@ -22,3 +22,23 @@ document.querySelectorAll('.faq-question').forEach(btn => {
         }
     });
 });
+
+const carousel = document.getElementById('applications-carousel');
+const cardWidth = 285 + 20; // card width + gap
+let carouselIndex = 0;
+const totalCards = document.querySelectorAll('.app-card').length;
+const visibleCards = 4;
+
+document.getElementById('app-next').addEventListener('click', () => {
+    if (carouselIndex < totalCards - visibleCards) {
+        carouselIndex++;
+        carousel.style.transform = `translateX(-${carouselIndex * cardWidth}px)`;
+    }
+});
+
+document.getElementById('app-prev').addEventListener('click', () => {
+    if (carouselIndex > 0) {
+        carouselIndex--;
+        carousel.style.transform = `translateX(-${carouselIndex * cardWidth}px)`;
+    }
+});

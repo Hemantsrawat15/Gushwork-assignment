@@ -947,3 +947,168 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+
+/* ── APPLICATIONS SECTION ── */
+
+#applications-section {
+    background-color: #F7F8F9;
+    background-image: url("assets/Noise & Texture.svg");
+    background-size: 1600px 1117px;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#applications-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#applications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 180px;
+    margin-bottom: 40px;
+}
+
+#applications-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 560px;
+}
+
+#applications-title {
+    font-family: 'Urbanist', sans-serif;
+    white-space: nowrap;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 44px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    margin-top: 22px;
+
+}
+
+#applications-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #4D545C;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    white-space: nowrap;
+
+}
+
+#applications-nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.app-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 68px;
+    height: 68px;
+    border-radius: 80px;
+    border-width: 1px;
+    background: var(--Colors-Neutral-white, #FFFFFF);
+    border: 1px solid var(--Colors-Neutral-200, #CFD1D4);
+    box-shadow: 0px 2px 4px 0px #1B1C1D0A;
+    margin-top: 68px;
+}
+
+.app-nav-btn img {
+    width: 18px;
+    height: 14px;
+    border-width: 2px;
+}
+
+#applications-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 54px;
+}
+
+#applications-carousel {
+    display: flex;
+    gap: 16px;
+    padding: 0 180px;
+    margin-left: -244px;
+    transition: transform 0.4s ease;
+}
+
+.app-card {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 420px;
+    height: 420px;
+    gap: 32px;
+    opacity: 1;
+    border-radius: 32px;
+
+}
+
+.app-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.app-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 24px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.579217) 40.23%, rgba(0, 0, 0, 0.8) 75.96%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+    opacity: 1;
+}
+
+.app-card-text {
+    width: 350px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.app-card-title {
+    color: #FFFFFF;
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0px;
+
+}
+
+.app-card-desc {
+    font-family: 'Inter', sans-serif;
+    color: var(--Colors-Neutral-white, #FFFFFF);
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+}
