@@ -1322,6 +1322,7 @@ button {
     background-image: url("assets/Noise & Texture.svg");
     background-size: 1600px 1117px;
     width: 100%;
+    height: 789px;
     padding: 80px 0;
     border-top: 1px solid #E1E3E8;
 }
@@ -1453,7 +1454,7 @@ button {
     background-image: url("assets/Noise & Texture.svg");
     background-size: 1600px 1117px;
     width: 100%;
-    padding: 80px 180px;
+    padding: 100px 180px;
     border-top: 1px solid #E1E3E8;
 }
 
@@ -1474,13 +1475,20 @@ button {
 
 #piping-subtitle {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
     color: #6A7077;
     text-align: center;
     max-width: 560px;
     margin: 0 auto 56px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 1.1%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #piping-grid {
@@ -1491,37 +1499,47 @@ button {
 }
 
 .piping-card {
+    width: 397.33px;
+    border-radius: 20px;
+    border: 1.25px solid var(--Colors-Neutral-200, #CFD1D4);
+    box-shadow: 0px 2px 4px 0px #1B1C1D0A;
     background: #FFFFFF;
-    border: 1px solid #E1E3E8;
-    border-radius: 16px;
-    padding: 20px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    box-shadow: 0px 2px 4px 0px #1B1C1D0A;
+    gap: 0;
+
+    height: 486.67px;
 }
 
 .piping-card-title {
-    font-family: 'Inter', sans-serif;
+    font-family: "Urbanist";
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0px;
     color: #0D0D0D;
+    margin-bottom: 16px;
 }
 
 .piping-card-desc {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 160%;
-    color: #6A7077;
+    letter-spacing: -0.6%;
+    color: #4D545C;
+    flex: 1;
 }
 
 .piping-card-img-wrapper {
-    width: 100%;
-    height: 160px;
-    border-radius: 10px;
+    width: 349.33px;
+    height: 174.67px;
+    border-radius: 16px;
     overflow: hidden;
+    margin-top: auto;
+    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
 .piping-card-img {
@@ -1531,16 +1549,25 @@ button {
 }
 
 .piping-learn-more {
-    width: 100%;
-    height: 44px;
-    border: 1px solid #E1E3E8;
-    border-radius: 8px;
-    background: white;
+    border: 1px solid #2B39903D;
+    background: #F4F5F9;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #0D0D0D;
+    font-weight: 600;
+    font-size: 15px;
+    color: #2B3990;
     cursor: pointer;
+    flex-shrink: 0;
+
+    width: 349.3333435058594px;
+    height: 44px;
+    gap: 4px;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    border-width: 1px;
+
 }
 
 #piping-cta-card {
@@ -1586,6 +1613,7 @@ button {
     font-weight: 600;
     cursor: pointer;
     white-space: nowrap;
+
 }
 
 /* ── RESOURCES SECTION ── */
