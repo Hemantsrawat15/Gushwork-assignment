@@ -525,6 +525,7 @@ button {
     padding: 80px 180px;
     margin: 0 auto;
     width: 100%;
+    height: 1114px;
 }
 
 #tech-specs-inner {
@@ -634,4 +635,128 @@ button {
     line-height: 24px;
     letter-spacing: -0.6%;
     white-space: nowrap;
+}
+
+/* ── FEATURES SECTION ── */
+
+#features-section {
+    background-color: #F7F8F9;
+    background-image: url("assets/Noise & Texture.svg");
+    background-size: 1600px 1117px;
+    width: 100%;
+    padding: 80px 180px;
+}
+
+#features-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+#features-title {
+    font-family: 'Urbanist', sans-serif;
+    color: #0D0D0D;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 44px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    margin-top: 20px;
+}
+
+#features-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 160%;
+    color: #6A7077;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.6%;
+    white-space: nowrap;
+}
+
+#features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.feature-card {
+    background: var(--Colors-Neutral-white, #FFFFFF);
+    border: 1px solid var(--Colors-Neutral-200, #CFD1D4);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 397.33px;
+    height: 248px;
+    box-shadow: 0px 2px 4px 0px #1B1C1D0A;
+    opacity: 1;
+}
+
+.feature-icon {
+    width: 26px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-card-title {
+
+    font-family: Urbanist;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    margin-top: 8px;
+}
+
+.feature-card-desc {
+    font-family: 'Inter', sans-serif;
+    color: var(--Colors-Neutral-700, #535A61);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+
+}
+
+#features-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+#btn-request-quote {
+    font-family: 'Inter';
+    width: 174px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    opacity: 1;
+    border-radius: 12px;
+    padding: 12px 24px;
+    color: white;
+    background: #2B3990;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+    white-space: nowrap;
+    border: none;
+    margin-top: 9px;
 }
