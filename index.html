@@ -21,6 +21,18 @@
 
 <body>
 
+    <!-- STICKY HEADER (hidden by default, shown on scroll) -->
+    <div id="sticky-header">
+        <div id="sticky-header-inner">
+            <img src="assets/Logo.svg" alt="logo" class="sticky-logo">
+            <nav class="sticky-nav">
+                <button class="sticky-nav-btn">About Us</button>
+                <button class="sticky-nav-btn">Products <img src="assets/CaretRight.svg" alt=""></button>
+                <button class="sticky-cta">Contact Us</button>
+            </nav>
+        </div>
+    </div>
+
     <header class="header" id="site-header">
         <div id="header-inner">
             <img id="logo" src="assets/Logo.svg" alt="logo">
@@ -54,6 +66,8 @@
                         <img id="main-product-image" src="assets/Fishnet.jpg" alt="Product image" />
                         <button class="gallery-arrow" id="arrow-next"><img src="assets/Arrow right.png" alt=""></button>
                     </div>
+                    <div id="zoom-lens"></div>
+                    <div id="zoom-preview"></div>
                     <div id="thumbnail-strip">
                         <div class="thumb active"></div>
                         <div class="thumb"></div>
@@ -595,15 +609,18 @@
                 <div id="resources-list">
                     <div class="resource-item">
                         <span class="resource-name">HDPE Pipe Installation Manual (PDF)</span>
-                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png" alt=""></button>
+                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png"
+                                alt=""></button>
                     </div>
                     <div class="resource-item">
                         <span class="resource-name">Maintenance & Inspection Handbook (PDF)</span>
-                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png" alt=""></button>
+                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png"
+                                alt=""></button>
                     </div>
                     <div class="resource-item">
                         <span class="resource-name">Engineering Specifications Sheet (PDF)</span>
-                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png" alt=""></button>
+                        <button class="resource-download">Download PDF <img src="assets/Download-Blue.png"
+                                alt=""></button>
                     </div>
                 </div>
             </div>
@@ -614,8 +631,10 @@
             <div id="cta-inner">
                 <div id="cta-left">
                     <h2 id="cta-title">Ready to Transform Your Textile Manufacturing?</h2>
-                    <p id="cta-desc">Get a personalized consultation and quote for machinery solutions tailored to your
+                    <p id="cta-desc">Get a personalized consultation and quote for machinery solutions tailored <br> to
+                        your
                         specific production requirements.</p>
+                    <div class="border-b"></div>
                     <p id="cta-contact">For immediate assistance, feel free to give us a direct call at
                         <strong>+91-XXX-XXX-XXXX</strong>. You can also send us a quick email at <a
                             href="mailto:info@meeraind.com" id="cta-email">info@meeraind.com</a>
@@ -646,8 +665,8 @@
                     <div id="footer-logo">
                         <img src="assets/Logo.svg" alt="Mangalam HDPE Pipes" id="footer-logo-img">
                     </div>
-                    <p id="footer-tagline"><strong>Premium</strong> <span id="footer-tagline-blue">HDPE Pipes &
-                            Fittings</span><br><strong>Manufacturer</strong> in South India</p>
+                    <p id="footer-tagline">Premium <span id="footer-tagline-blue">HDPE Pipes &
+                            Fittings <br> Manufacturer </span>in South India</p>
                 </div>
             </div>
 
@@ -676,14 +695,14 @@
                 </div>
                 <div class="footer-col">
                     <h4 class="footer-col-title">Contact</h4>
-                    <p class="footer-contact-item">📍 2126, Road No. 2, GIDC Sachin, Surat - 394 230 Gujarat, India</p>
-                    <p class="footer-contact-item">📞 +91-XXX-XXX-XXXX</p>
-                    <p class="footer-contact-item">✉ info@meeraind.com</p>
-                    <p class="footer-contact-item">🎧 support@meeraind.com</p>
+                    <p class="footer-contact-item"> <img src="assets/Location.png" alt=""> 2126, Road No. 2, GIDC Sachin, Surat - 394 230 Gujarat, India</p>
+                    <p class="footer-contact-item"><img src="assets/Phone.png" alt=""> +91-XXX-XXX-XXXX</p>
+                    <p class="footer-contact-item"><img src="assets/Mail.png" alt=""> info@meeraind.com</p>
+                    <p class="footer-contact-item"><img src="assets/Headphone.png" alt=""> support@meeraind.com</p>
                     <div id="footer-socials">
-                        <a href="#" class="footer-social">in</a>
-                        <a href="#" class="footer-social">𝕏</a>
-                        <a href="#" class="footer-social">ig</a>
+                        <a href="#" class="footer-social"><img src="assets/Linkedin.png" alt=""></a>
+                        <a href="#" class="footer-social"><img src="assets/X.png" alt=""></a>
+                        <a href="#" class="footer-social"><img src="assets/Insta.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -699,6 +718,51 @@
         </footer>
 
     </main>
+
+    <!-- DOWNLOAD BROCHURE MODAL -->
+    <div id="download-modal-overlay">
+        <div id="download-modal">
+            <button id="download-modal-close">&times;</button>
+            <h3 id="download-modal-title">Let us email the entire catalogue to you</h3>
+            <div class="modal-field">
+                <label class="modal-label">Your Email *</label>
+                <input type="email" class="modal-input" id="modal-email" placeholder="example@gmail.com">
+            </div>
+            <div class="modal-field">
+                <label class="modal-label">Your Contact (Optional)</label>
+                <input type="tel" class="modal-input" id="modal-contact" placeholder="+91-0000000000">
+            </div>
+            <button id="download-modal-btn">Download Brochure</button>
+        </div>
+    </div>
+
+    <!-- QUOTE REQUEST MODAL -->
+    <div id="quote-modal-overlay">
+        <div id="quote-modal">
+            <button id="quote-modal-close">&times;</button>
+            <h3 id="quote-modal-title">Request a call back</h3>
+            <div class="modal-field">
+                <input type="text" class="modal-input" id="quote-fullname" placeholder="Full Name">
+            </div>
+            <div class="modal-field">
+                <input type="text" class="modal-input" id="quote-company" placeholder="Company Name">
+            </div>
+            <div class="modal-field">
+                <input type="email" class="modal-input" id="quote-email" placeholder="Email Address">
+            </div>
+            <div class="modal-field">
+                <div id="quote-phone-row">
+                    <select id="quote-country-code">
+                        <option>+91</option>
+                        <option>+1</option>
+                        <option>+44</option>
+                    </select>
+                    <input type="tel" class="modal-input" id="quote-phone" placeholder="7003026616">
+                </div>
+            </div>
+            <button id="quote-modal-btn">Submit Form</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
